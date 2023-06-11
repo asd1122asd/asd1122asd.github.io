@@ -3,22 +3,88 @@
     <head>
         <title>Search</title>
         <style>
-            .hatter1{
-                background-color:#202124;
-                display:grid;
-                justify-content: center;
-                align-items:center;
-            }
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #202124;
+        }
+        
+        .search-container {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            max-width: 600px;
+            min-width: 300px;
+            overflow: hidden;
+        }
+        
+        .search-input {
+            padding: 10px;
+            line-height: 22px;
+            border-radius: 20px;
+            font-size: 16px;
+            border-color: #434447;
+            background-color: #202124;
+            border-style:solid;
+            outline:none;
+
+        }
+        
+        .search-input:focus {
+            padding: 10px;
+            line-height: 22px;
+            border-radius: 20px;
+            font-size: 16px;
+            border-color: #303134;
+            background-color: #303134;
+            border-style:solid;
+            outline:none;
+        }
+
+        .search-input:hover {
+            padding: 10px;
+            line-height: 22px;
+            border-radius: 20px;
+            font-size: 16px;
+            border-color: #303134;
+            background-color: #303134;
+            border-style:solid;
+            outline:none;
+        }
+
+        .search-button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #303134;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 4px;
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+        .logo-image {
+            max-width: 300px;
+            margin-bottom: 20px;
+            
+        }
         </style>
     </head>
     <body>
-        <div class="hatter1">
-            <div>
-                <form action="https://www.google.com/search">
-                <input type="text" name="q">
-                <input type="submit" value="Google Search">
-            </div>
-        </form>
+        <div class="search-container">
+            <center>
+                <img class="logo-image" src="google_logo.png" alt="">
+            </center>
+                <input class="search-input" type="text">
+            <center>
+                <input class="search-button" type="submit" value="Google-keresés">
+                <input class="search-button" type="submit" value="Jó napom van">
+            </center>
         </div>
     </body>
 </html>
